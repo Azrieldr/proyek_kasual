@@ -1,0 +1,5 @@
+Method,Estimate,Interpretation
+Naive OLS,0.5072582663410581,Biased (no controls)
+Adjusted OLS,0.1959907295578447,Causal (backdoor adjustment)
+IPW,16.185419138016783,Causal (reweighting)
+DiD (Avg),,Causal (quasi-experimental)

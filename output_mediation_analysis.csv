@@ -1,0 +1,6 @@
+Path,Coefficient,Percentage
+Total Effect (c),0.5072582663410581,100.0
+Direct Effect (c'),0.45768525117475134,90.22726321960496
+Indirect Effect (a×b),0.0495730151663067,9.772736780395018
+Effect on Mediator (a),122.07909311095277,
+Mediator to Outcome (b),0.0004060729311058347,

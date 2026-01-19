@@ -1,0 +1,107 @@
+{
+  "nodes": [
+    {
+      "id": "is_holiday",
+      "label": "Holiday\n(Treatment)",
+      "type": "treatment"
+    },
+    {
+      "id": "onpromotion",
+      "label": "Promotion\n(Outcome)",
+      "type": "outcome"
+    },
+    {
+      "id": "store_type",
+      "label": "Store Type\n(Confounder)",
+      "type": "confounder"
+    },
+    {
+      "id": "cluster",
+      "label": "Cluster\n(Confounder)",
+      "type": "confounder"
+    },
+    {
+      "id": "oil_price",
+      "label": "Oil Price\n(Confounder)",
+      "type": "confounder"
+    },
+    {
+      "id": "month",
+      "label": "Month\n(Confounder)",
+      "type": "confounder"
+    },
+    {
+      "id": "transactions",
+      "label": "Transactions\n(Mediator)",
+      "type": "mediator"
+    }
+  ],
+  "edges": [
+    {
+      "from": "is_holiday",
+      "to": "onpromotion",
+      "type": "direct",
+      "weight": 0.45768525117475134
+    },
+    {
+      "from": "is_holiday",
+      "to": "transactions",
+      "type": "mediator",
+      "weight": 122.07909311095277
+    },
+    {
+      "from": "transactions",
+      "to": "onpromotion",
+      "type": "mediator",
+      "weight": 0.0004060729311058347
+    },
+    {
+      "from": "store_type",
+      "to": "is_holiday",
+      "type": "confounder",
+      "weight": null
+    },
+    {
+      "from": "store_type",
+      "to": "onpromotion",
+      "type": "confounder",
+      "weight": null
+    },
+    {
+      "from": "cluster",
+      "to": "is_holiday",
+      "type": "confounder",
+      "weight": null
+    },
+    {
+      "from": "cluster",
+      "to": "onpromotion",
+      "type": "confounder",
+      "weight": null
+    },
+    {
+      "from": "oil_price",
+      "to": "is_holiday",
+      "type": "confounder",
+      "weight": null
+    },
+    {
+      "from": "oil_price",
+      "to": "onpromotion",
+      "type": "confounder",
+      "weight": null
+    },
+    {
+      "from": "month",
+      "to": "is_holiday",
+      "type": "confounder",
+      "weight": null
+    },
+    {
+      "from": "month",
+      "to": "onpromotion",
+      "type": "confounder",
+      "weight": null
+    }
+  ]
+}
